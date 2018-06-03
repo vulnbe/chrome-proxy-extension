@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Proxy setup</title>
+    <style type="text/css">
+      body {
+        margin: 10px;
+        white-space: nowrap;
+      }
+      h1 {
+        font-size: 15px;
+      }
+      .container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .hidden{
+        display: none;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <h1>Proxy setup</h1>
+    <div id="container" class="container">
+      <p>IP: <input type="text" id="proxyip" size="20"></p><br/>
+      <p>Port: <input type="text" id="proxyport" size="5"></p><br/>
+      <p><input type="checkbox" id="useproxy">Use proxy</p><br/>
+    </div>
+    <div id="message" class="hidden">
+      This extension works in private session only.
+    </div>
+  </body>
+</html>
