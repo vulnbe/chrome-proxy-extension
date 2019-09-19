@@ -25,9 +25,17 @@
   <body>
     <h1>Proxy setup</h1>
     <div id="container" class="container">
-      <p>IP: <input type="text" id="proxyip" size="20"></p><br/>
-      <p>Port: <input type="text" id="proxyport" size="5"></p><br/>
-      <p><input type="checkbox" id="useproxy">Use proxy</p><br/>
+      <p>Type: 
+        <select id="proxyScheme">
+          <option selected value="http">http</option>
+          <option value="https">https</option>
+          <option value="socks4">socks4</option>
+          <option value="socks5">socks5</option>
+        </select>
+      </p></br>
+      <p>IP: <input type="text" id="proxyIP" size="20"></p><br/>
+      <p>Port: <input type="text" id="proxyPort" size="5"></p><br/>
+      <p><input type="checkbox" id="proxyEnabled">Use proxy</p><br/>
     </div>
     <div id="message" class="hidden">
       This extension works in private session only.
